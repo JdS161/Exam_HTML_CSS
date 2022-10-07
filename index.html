@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Carousel Template · Bootstrap v5.2</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/carousel/">
+
+    
+
+    
+
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">КожаДел</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tools.html">Инструмент</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blueprints.html">Выкройки</a>
+          </li>
+        </ul>
+        <!-- <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Поиск</button>
+        </form> -->
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="5000">
+            <a href="index.html"><img src="images/pict1.webp" class="d-block w-100"></a>
+            <div class="carousel-caption d-none d-md-block">
+                <h2>С чего начать</h2>
+                <p>Небольшой гайд по кожевничеству</p>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <a href="tools.html"><img src="images/tools.webp" class="d-block w-100"> </a>
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Инструмент</h2>
+                <p>Основной набор инструмента для начала работы</p>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="5000">
+          <a href="blueprints.html"><img src="images/pict3.jpeg" class="d-block w-100"> </a>
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Выкройки для работы</h2>
+                <!-- <p>Some representative placeholder content for the third slide.</p> -->
+            </div>
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+  <!-- <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <svg class="bd-placeholder-img"  width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" 
+        preserveAspectRatio="xMidYMid slice" focusable="false">
+          <rect width="100%" height="100%" fill="#777"/>
+        </svg>
+
+        <div class="container">
+          <div class="carousel-caption text-start">
+            <h1>Example headline.</h1>
+            <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" 
+        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" 
+        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->
+
+
+  <div>
+
+    <h4>С чего начинать? </h4>
+
+    <p>
+      Ту вроде просто, с кожи и инструментов (лично я учился на старой куртке, которую было жалко выкидывать, потом перешел на нормальную кожу). Если нет старой куртки / сапог, посмотрите сначала в сторону полы, она дешевле и не жалко запороть.
+    </p>
+
+    <img src="images/index/leather.jpg" class="img-fluid">
+
+
+<p>  
+  После того как набьете руку (про инструменты будет ниже), можно смотреть в сторону другой части - чепрак. Кстати кожа бывает растительного дубления (растишка) и хромового. Обычно кожи продаются готовыми кусками (и вроде как можно найти и нарезанные куски А4 формата по 800 рублей). Цена обычно за дм2 (от 15 до 60 рублей) в итоге шкура (100 дм2) будет стоит порядка 2-6 тысяч рублей. При этом пола с пороками (30-50 дм2) будет стоит порядка 400 рублей.
+</p>
+  
+
+<h4>Какую кожу покупать когда уже набили руку? </h4>
+<p>
+  Я рекомендую брать кожу двух видов толщиной 1мм и 2-3мм растительного дубления (1мм для внутренних дел, кармашки там и внутренние держатели в обложку для паспорта и прочие элементы).
+</p>
+
+
+<h4>Цвет кожи?</h4>
+<p>
+ Берите некрашеную кожу и отдельно краски (про краски - ниже) так вы не будете привязаны к определенному цвету и согласитесь отдать 6 тысяч за кожу одного цвета - довольно странно (ну только если речь не стоит о какой-нибудь нить сумке - портфеле, которые сразу отобьют инвестиции).
+</p>
+
+<img src="images/index/paint.jpg" class="img-fluid">
+
+<h4>Краски? </h4>
+<p>
+  так, кожа у вас есть, но теперь вопрос красок, есть как минимум двух видов, <b>проникающие</b> (проникают внутрь кожи) и <b>поверхностные</b> (как пленка на поверхности), <br><u><b>Проникающие</b></u> есть трех видов, на водной основе, на спиртовой и на растворителях, я предпочитаю на водной основе (тут даже морилка для дерева подойдет за 30 рублей бутылка).
+  
+ <br> <u><b>Поверхностные</b></u> - тут в общем куча всего, я пока крашу красками тараго после покраски прохожусь финишем на основе карнаубского воска, кажется тоже тараго,
+  
+  После любой проникающей краски, кожа становится жесткой, а иногда слишком жесткой, поэтому не переусердствуйте.
+</p>
+
+
+<h4>Где купить краски для кожи?</h4>
+<p>
+  морилки в любом строительном (я взял липу - желтый цвет, эбен - голубой, красное дерево - красный и мокко - коричневый). Поверхностные и финиш я беру в катарино (тут список не замыкается, в общем пробуйте разные краски)
+</p>
+  
+
+<h4>Как красить?</h4>
+<p>
+ морилку раньше красил кисточкой, теперь крашу мелким валиком. вроде есть тампоны какие-то специальные (на фото) по 20 р за штуку, пока ими не красил, как только из поднебесной прилетят попробую. Поверхностные краски наношу тампонированием.
+</p>
+  </div>
+
+ 
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+</main>
+
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
